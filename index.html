@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚡</div>
+    <h1>Team Thunderbolts</h1>
+    <p>"Striking Hard, Playing Smart!"</p>
+  </header>
+
+  <section class="players">
+    <div class="card" onclick="openModal('Alex Storm', 145.6, 78, 7, '75* vs Dragons')">
+      <div class="avatar">🏏</div>
+      <h3>Dhoni</h3>
+      <p>Batsman</p>
+    </div>
+
+    <div class="card" onclick="openModal('Ravi Blaze', 132.4, 62, 8, '5/23 vs Titans')">
+      <div class="avatar">🔥</div>
+      <h3>Jadeja</h3>
+      <p>All-rounder</p>
+    </div>
+
+    <div class="card" onclick="openModal('Zara Sky', 158.9, 50, 18, '102* vs Warriors')">
+      <div class="avatar">💫</div>
+      <h3>Virat</h3>
+      <p>Batsman</p>
+    </div>
+
+    <div class="card" onclick="openModal('Leo Quick', 120.5, 90, 93, '4/12 vs Knights')">
+      <div class="avatar">⚡</div>
+      <h3>Bumrah</h3>
+      <p>Bowler</p>
+    </div>
+  </section>
+
+  <div class="modal" id="playerModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="playerName">Player Name</h3>
+      <div class="stats">
+        <p><strong>Strike Rate:</strong> <span id="strikeRate"></span></p>
+        <p><strong>Matches Played:</strong> <span id="matches"></span></p>
+        <p><strong>Jersey Number:</strong> <span id="jersey"></span></p>
+        <p><strong>Best Performance:</strong> <span id="performance"></span></p>
+      </div>
+    </div>
+  </div>
+    <script src="./script.js"></script>
+</body>
+</html>
